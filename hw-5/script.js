@@ -1,5 +1,3 @@
-//let a = Number(prompt('Введите первое число'));
-//let b = Number(prompt('Введите второе число'));
 
 // z 1
 function min (a, b) {
