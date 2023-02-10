@@ -2,9 +2,10 @@
 // z 1
 function min (a, b) {
     
-    if (a < b) { return a;
+    if (a < b) { 
+        return a;
     } else {
-            return b;
+        return b;
     }
 }
 
@@ -33,7 +34,7 @@ function math(n) {
     console.log(n ** 2);
 }
 
-console.log(math(n));
+math(n);
 
 
 // z 3.2

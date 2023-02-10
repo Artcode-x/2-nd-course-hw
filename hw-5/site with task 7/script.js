@@ -1,13 +1,16 @@
 let x = Number(prompt('Введите число от 1 до 12'));
 function month(x) {
-    if (x < 3) {
+    if (x <= 2) {
         return 'зима';
-    } else if (x > 3 && x <= 8) {    
+    } else if (x > 2 && x < 6) {
+        return 'весна';
+    } else if (x > 5 && x <= 8) {    
      return 'лето';    
-    } else if (x > 8 && x <= 11) {
+    } else if (x > 8 && x <= 10) {
         return 'осень!';
+
     } else {
-        console.log('Вы ввели некорректное число');
+        return 'Зимушка';
     }
 }
 console.log(month(x));
