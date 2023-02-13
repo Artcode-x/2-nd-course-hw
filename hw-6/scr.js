@@ -3,10 +3,11 @@
 let searchNum = [1, 5, 4, 10, 0, 3];
 
 for ( i = 0; i < searchNum.length; i++) {
+    console.log(searchNum[i]);
     if (searchNum[i] === 10) {
         break;
     }
-    console.log(searchNum[i]);
+   
 }
 
 //z 2
@@ -78,19 +79,20 @@ console.log(ready);
 
 //z 10
 
-const sixnumArr = new Array(6);
+const sixnumArr = new Array(6); // обьявляем массив, он будет иметь 6 эл-ов
 
 const randomArr = (arr) => {
     for (let k=0, min = 1, max = 10; k < arr.length; k++) {
-        arr[k] = Math.round(Math.random() * (max - min)) + min;
+        arr[k] = Math.round(Math.random() * (max - min)) + min; 
     }
 }
     const averagenumArr = (arr) => {
-        let sum = 0;
-        for (let k = 0; k < arr.length; k++) {
-            sum += arr[k];
+        let sum = 0;  // кол-во  эл массива
+        for (let k = 0; k < arr.length; k++) {  // c генерацией каждого эл-та индекс увеличивается 
+            sum += arr[k]; //прибавляет значение каждого нового элемента к общей сумме / суммируются все значения массива
         }
         return sum / arr.length;
+        
     }
 
 randomArr(sixnumArr);
@@ -99,12 +101,13 @@ console.log(averagenumArr(sixnumArr));
 
 
 //z 11
-let arr = [[1, 2, 3], [4, 5, 6]];
+let arr = [[1, 2, 3], [4, 5, 6]]; // [1, 2, 3, 4, 5, 6]  
 let newArr = [];
 
-for (let t = 0; t < arr.length; t++) {
-    for (let l = 0; l < arr[t].length; l++) {
-        newArr.push(arr[t][l]);
+for (let t = 0; t < arr.length; t++) {             //  длина массива = 2  (0 , 1)
+    for (let l = 0; l < arr[t].length; l++) {      // 0 , 1,  2
+        newArr.push(arr[t][l]);   
+        console.log(t , l);                        // arr[][]  00  01   02    1.0    1.1   12
     }
 }
 console.log(newArr);
@@ -124,4 +127,7 @@ for (let i = 0, sum = 0; i < fiveArr.length; i++) {
         console.log(sum);
     }
 }
-Footer
+
+
+
+
