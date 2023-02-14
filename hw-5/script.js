@@ -1,5 +1,4 @@
-// 
-//
+
 // z 1
 function min (a, b) {
     
