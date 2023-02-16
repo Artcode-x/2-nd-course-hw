@@ -119,6 +119,7 @@ console.log('Время: ' + fullDateTime);
 
 
 //z 11
+/*
 let list = ['Яблоко','Груша','Дыня','Виноград','Персик', 'Апельсин','Мандарин'];
 list = list.sort(() => Math.random() - 0.5);
 alert(list.join(', '));
@@ -135,5 +136,28 @@ let question2 = prompt('Чему равнялся последний элеме�
   }
 }
 answer()
+*/
 
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+
+const dateFull = (date) => {
+    const hour = date.getHours();
+    let minute = date.getMinutes();
+    let second = date.getSeconds();
+    const dateRu = date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear() + " - это " + days[date.getDay()];
+
+    if (minute < 10) {
+        minute = "0" + minute;
+    }
+    if (second < 10) { 
+        second = "0" + second; 
+    }
+
+    const result = (`Дата: ${dateRu} \nВремя: ${hour}:${minute}:${second}`);
+
+    return result;
+}
+
+console.log(dateFull(myDate));
 
