@@ -1,7 +1,28 @@
-@media (max width: 767px) {
+@media (max-width: 767px) {
   .center {
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    padding-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-sizing: content-box;
+  }
+  .header__title {
+    font-size: 32px;
+  }
+  .game {
+    width: 344px;
+    height: 236px;
+    left: 16px;
+  }
+  .afisha {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 * {

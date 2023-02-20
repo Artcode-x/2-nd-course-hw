@@ -60,7 +60,10 @@
 
 
 
-
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
 
     .zafisha__img {
