@@ -1,0 +1,127 @@
+@media (max-width: 1200px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+        }
+    }
+
+}
+
+@media (min-width: 767px) {
+    .header {
+        &__title {
+            width: 700px;
+        }
+
+        &__text {
+            width: 481px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        height: auto;
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            width: 343px;
+        }
+
+    }
+
+    .game {
+        width: 344px;
+        height: 236px;
+        left: 16px;
+        // grid-template-columns: repeat(auto-fit, minmax(343px, 1fr));
+
+
+    }
+
+
+
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    .zafisha__img {
+        height: 236px;
+        display: flex;
+        text-align: center;
+        width: 375px;
+    }
+
+    .afisha {
+        padding-top: 0px;
+        width: auto;
+        text-align: center;
+
+        &__text-block {
+            text-align: center;
+        }
+
+        &__btn {
+
+            text-align: center;
+        }
+
+        &__title {
+            width: 100%;
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+            //    padding-left: 50px; // 66 - 16
+
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            width: 343px;
+            padding-left: 16px;
+            text-align: center;
+        }
+
+        &__img {
+            width: 344px;
+            height: 236px;
+            padding-top: 64px;
+
+        }
+
+
+    }
+
+    .product {
+        padding-top: 252px;
+        display: grid;
+        justify-content: center;
+
+        &__item {}
+
+        &__product_imgs {}
+    }
+
+}

@@ -1,6 +1,53 @@
-@media (max width: 767px) {
+@media (min-width: 767px) {
+    .header {
+        &__title {
+            width: 700px;
+        }
+        &__text {
+            width: 481px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
     .center {
-        padding-left: 2px;
-        padding-right: 2px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        padding-top: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        box-sizing: content-box;
+    }
+
+    .game {
+        width: 344px;
+        height: 236px;
+        left: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(343px, 1fr));
+
+
+    }
+
+    .afisha {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    &__img {
+        width: 344px;
+        height: 236px;
     }
 }

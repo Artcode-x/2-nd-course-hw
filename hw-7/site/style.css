@@ -1,30 +1,3 @@
-@media (max-width: 767px) {
-  .center {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .header {
-    padding-top: 32px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    box-sizing: content-box;
-  }
-  .header__title {
-    font-size: 32px;
-  }
-  .game {
-    width: 344px;
-    height: 236px;
-    left: 16px;
-  }
-  .afisha {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -84,6 +57,7 @@ button {
   justify-content: space-between;
   padding-bottom: 235px;
   padding-top: 234px;
+  flex-wrap: wrap;
 }
 .afisha__btn {
   background: #9C0332;
@@ -141,4 +115,89 @@ button {
   text-decoration: none;
   left: 32px;
   bottom: 32px;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__title {
+    text-align: center;
+  }
+  .header__text {
+    text-align: center;
+  }
+}
+@media (min-width: 767px) {
+  .header__title {
+    width: 700px;
+  }
+  .header__text {
+    width: 481px;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    height: auto;
+  }
+  .header__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .header__text {
+    font-size: 14px;
+    line-height: 22px;
+    width: 343px;
+  }
+  .game {
+    width: 344px;
+    height: 236px;
+    left: 16px;
+  }
+  .zafisha__img {
+    height: 236px;
+    display: flex;
+    text-align: center;
+    width: 375px;
+  }
+  .afisha {
+    padding-top: 0px;
+    width: auto;
+    text-align: center;
+  }
+  .afisha__text-block {
+    text-align: center;
+  }
+  .afisha__btn {
+    text-align: center;
+  }
+  .afisha__title {
+    width: 100%;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .afisha__text {
+    font-size: 14px;
+    line-height: 22px;
+    width: 343px;
+    padding-left: 16px;
+    text-align: center;
+  }
+  .afisha__img {
+    width: 344px;
+    height: 236px;
+    padding-top: 64px;
+  }
+  .product {
+    padding-top: 252px;
+    display: grid;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */
