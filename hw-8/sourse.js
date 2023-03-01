@@ -1,6 +1,19 @@
 
-//task 1
+//  function sort(users) {
+//      for (let i = 0; i < arr.length; i++) {
+//          for (let j = i; j < arr.length; j++) {
+//             if (users[i].toString() > users[j].toString()) {
+//              let temp = users[i];
+//              users[i] = users[j];
+//              users[j] = temp;
+//             }
+//          }
+//      }
+//  return users;
+// } 
 
+//task 1
+/*
 const arrNum = (arr) => {
     let multiOfNumbers = arr[0];
     for (let i = 1; i < arr.length; i++) {
@@ -21,10 +34,10 @@ const each = (arr, call) => call(arr);
 
 console.log(`Произведение равно: ${each([3, 4, 1, 9], arrNum)}`);
 console.log(`Cумма равна: ${each([3, 4, 1, 9], arrOther)}`);
-
+*/
 // getResult ([3, 4, 1, 9], mult); //108
 // getResult ([3, 4, 1, 9], sum); //17
-
+/*
 // task 2
 const users = [
     { name: 'Jon', age: 22 },
@@ -56,11 +69,11 @@ function compareAge(a, b) { // сортирнул по возрасту
 
 // users.sort(callback);
 // console.log(users);
+*/
 
-
-
-//task 3
 /*
+//task 3
+
 const arrRev = [1, '4', 9, 'two'];
 const arrTransformToNum = [1, '4', false, 9, 'two'];
 
@@ -77,11 +90,11 @@ const translateToNum = (arr) => {
     return arr;
 }
 
-const each = (arr, call) => call(arr);  
+const each = (arr, call) => call(arr); 
 console.log(each(arrRev, reverseArr));
 console.log(each(arrTransformToNum, translateToNum));
 */
-
+/*
 // task 4
 const timer = () => {
     let date = new Date();
@@ -101,27 +114,32 @@ setTimeout(() => {  // Устанавливаем setTimeout для того ч�
 }
 
 timer();
-
+*/
 
 //task 5 
+// setTimeout(() => {
+//     calling();
+//     beeps(talk);
+//     }, 2 * 1000);
+
 
 function calling() {
     console.log('Звоню!')
 };
 
-function beeps(call) {
+function beeps() {
+    setTimeout(() => {
         console.log('Идут гудки...')
-        call(); // call - функция callback убирает асинхронность, чтобы все шло по порядку
-    };
-
+    }, 1000);
+}
 
 function talk() {
     console.log('Разговор')
 }
 
 setTimeout(() => {
-    calling();
-    beeps(talk);
-}, 2 * 1000);
+
+    
+}
 
  
